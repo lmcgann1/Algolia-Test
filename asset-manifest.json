@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Algolia-Test/static/css/main.42a86b4d.css",
+    "main.js": "/Algolia-Test/static/js/main.c2de9653.js",
+    "static/js/787.76f916be.chunk.js": "/Algolia-Test/static/js/787.76f916be.chunk.js",
+    "index.html": "/Algolia-Test/index.html",
+    "main.42a86b4d.css.map": "/Algolia-Test/static/css/main.42a86b4d.css.map",
+    "main.c2de9653.js.map": "/Algolia-Test/static/js/main.c2de9653.js.map",
+    "787.76f916be.chunk.js.map": "/Algolia-Test/static/js/787.76f916be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42a86b4d.css",
+    "static/js/main.c2de9653.js"
+  ]
+}
