@@ -1,21 +1,27 @@
+body {
+  background-color: #c0c2c8;
+  margin: 0; /* Reset default margin */
+  overflow-y: auto; /* Make the entire page scrollable */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ais-RefinementList-item {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.custom-refinement-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #dde844;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +30,87 @@
   color: white;
 }
 
+.SingleResult {
+  background-color: #083285;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-search-box-container .ais-SearchBox-input {
+  width: 400px;
+  font-size: 24px;
+}
+
+.custom-search-box-container {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ac6c77;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(153, 13, 13, 0.845);
+}
+
+.ratings-prep-container {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ais-Hits-list {
+  position: fixed;
+  top: 20px;
+  left: 55%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px); /* Adjust the max-height to fit your layout */
+  max-width: 1250px;
+}
+
+
+.pagination-container {
+  position: fixed;
+  bottom: 20px;
+  left: 55%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-container .ais-Pagination-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination-container .ais-Pagination-item {
+  margin: 0 5px;
+}
+
+.pagination-container .ais-Pagination-link {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+}
+
+.pagination-container .ais-Pagination-item--selected .ais-Pagination-link {
+  background-color: #000000;
+  color: #fff;
+}
+
+.pagination-container .ais-Pagination-item--disabled .ais-Pagination-link {
+  color: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
 }
